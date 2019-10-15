@@ -35,7 +35,7 @@ int Test::add(int x, int y, int z=10)
 int main()
 {
 	Test Obj;
-	cout << "Addition is: " << Obj.add(10, 20, 30) << endl;
+	cout << "Addition is: " << Obj.add(10, 20) << endl;
 	system("pause");
 }
 //int main()
