@@ -32,6 +32,7 @@ int main()
 {
 	Test Obj;
 	cout << "Addition is: " << Obj.add(10, 20, 30) << endl;
+	cout << "Addition is: " << Obj.add(10, 20, 25) << endl;
 	system("pause");
 }
 //int main()
