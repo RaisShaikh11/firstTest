@@ -19,18 +19,19 @@ using namespace std;
 class Test
 {
 public:
-	int add(int a, int b);
-	int add(int a, int b, int c);
+	int add(int, int);
+	int add(int, int, int);
+	int sub(int, int);
 };
 int Test::add(int x, int y)
 {
 	return x + y;
 }
-int Test::add(int x, int y, int z)
+int Test::sub(int a, int b)
 {
-	return x + y + z;
+	return a - b;
 }
-int Test::add(int x, int y, int z=10)
+int Test::add(int x, int y, int z)
 {
 	return x + y + z;
 }
@@ -40,6 +41,7 @@ int main()
 	cout << "Addition is: " << Obj.add(10, 20, 30) << endl;
 	cout << "Addition is: " << Obj.add(10, 20, 25) << endl;
 	cout << "Addition is: " << Obj.add(10, 20) << endl;
+	cout << "Subtraction is: " << Obj.sub(30, 20) << endl;
 	system("pause");
 }
 //int main()
