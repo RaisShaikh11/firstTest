@@ -28,6 +28,10 @@ int Test::add(int x, int y, int z)
 {
 	return x + y + z;
 }
+int Test::add(int x, int y, int z=10)
+{
+	return x + y + z;
+}
 int main()
 {
 	Test Obj;
