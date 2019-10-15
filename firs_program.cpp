@@ -28,11 +28,16 @@ int Test::add(int x, int y, int z)
 {
 	return x + y + z;
 }
+int Test::add(int x, int y, int z=10)
+{
+	return x + y + z;
+}
 int main()
 {
 	Test Obj;
 	cout << "Addition is: " << Obj.add(10, 20, 30) << endl;
 	cout << "Addition is: " << Obj.add(10, 20, 25) << endl;
+	cout << "Addition is: " << Obj.add(10, 20) << endl;
 	system("pause");
 }
 //int main()
